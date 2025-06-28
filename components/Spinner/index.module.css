@@ -1,0 +1,54 @@
+
+/* 
+spinner
+*/
+.spinner {
+  position: relative;
+  z-index: 0;
+}
+.spinner::before,
+.spinner::after {
+  content: "";
+  position: absolute;
+  visibility: visible;
+opacity: 1;
+
+transition: 1s;
+}
+.spinner::before {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  inset: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner::after {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-gray-400);
+  top: 0;
+  left: 0;
+}
+.spinner.stop::before,
+.spinner.stop::after 
+ {
+  visibility: hidden;
+opacity: 0;
+animation:none;
+}
