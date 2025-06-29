@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import type { News } from "@/types";
 import { useInview } from "@/hook/useInview";
 import { useRef, useState } from "react";
 import Spinner from "../Spinner";
-
+import { dateFormat } from "@/libs/utility";
 type Props = {
   article: News;
 };
@@ -24,7 +24,7 @@ const ArticleCard = ({ article }: Props) => {
         <header className="mb-2 md:mb-3 lg:mb-4">
           <p className="text-xs text-right text-gray-500 mb-2 lg:mb-3">
             <time dateTime={article.publishedAt ?? article.createdAt}>
-              {article.publishedAt ?? article.createdAt}
+              {dateFormat(article.publishedAt ?? article.createdAt, ".")}
             </time>
           </p>
           <figure className="mb-4 aspect-[3/2] rounded-lg overflow-hidden">
@@ -47,7 +47,7 @@ const ArticleCard = ({ article }: Props) => {
                 />
               )
             ) : (
-              <Spinner addClass="mb-4 aspect-[3/2] rounded-lg overflow-hidden"/>
+              <Spinner addClass="mb-4 aspect-[3/2] rounded-lg overflow-hidden" />
             )}
           </figure>
         </header>

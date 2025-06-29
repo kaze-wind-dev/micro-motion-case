@@ -21,3 +21,7 @@ export function buildQueryString(queries: Record<string, unknown>): string {
         )
     ).toString();
 }
+
+export function dateFormat (date: string | Date, format?: string) {
+  return new Date(date).toLocaleDateString("ja-JP").split("/").join(format);
+};
