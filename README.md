@@ -25,7 +25,7 @@
   - fetch + Typescript による自作関数
  
 ## 公開URL
-ブラウザで [[http://localhost:3000](https://micro-motion-case.vercel.app/)]([http://localhost:3000](https://micro-motion-case.vercel.app/)) にアクセス。
+ブラウザで [https://micro-motion-case.vercel.app/](https://micro-motion-case.vercel.app/) にアクセス。
 
 ## ディレクトリ構成
 
