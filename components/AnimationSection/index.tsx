@@ -114,8 +114,8 @@ const AnimationSection = () => {
               ></div>
               <Image
                 src="/images/forest.jpg"
-                width={5997}
-                height={4000}
+                width={960}
+                height={640}
                 alt="森"
                 className="object-cover w-full rounded-3xl"
               />
@@ -142,8 +142,8 @@ const AnimationSection = () => {
               ></div>
               <Image
                 src="/images/park.jpg"
-                width={6144}
-                height={4096}
+                width={960}
+                height={640}
                 alt="公園"
                 className="object-cover w-full rounded-3xl"
               />
@@ -174,8 +174,8 @@ const AnimationSection = () => {
               ></div>
               <Image
                 src="/images/river.jpg"
-                width={5760}
-                height={3840}
+                width={960}
+                height={640}
                 alt="川"
                 className="object-cover w-full rounded-3xl"
               />

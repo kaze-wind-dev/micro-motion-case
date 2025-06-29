@@ -25,9 +25,7 @@ const Hero = () => {
         swiperRef.current.swiper.autoplay.stop();
       }
     }
-
   }, [swiperRef, inview]);
-
 
   return (
     <section
@@ -37,7 +35,7 @@ const Hero = () => {
       <h1
         className={`
             ${styles.hero__copy}
-            ${inview ? ' ' + styles.inview : ''}
+            ${inview ? " " + styles.inview : ""}
              break-words max-w-[90%] absolute top-1/2 left-[5%] md:left-0 -translate-y-1/2 z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold font-mono bg-emerald-500 py-2 px-4`}
       >
         microCMS×GSAP×swiper
@@ -52,27 +50,27 @@ const Hero = () => {
       >
         <SwiperSlide className={styles.hero__slide}>
           <Image
-            src="/images/forest.jpg"
-            width={5997}
-            height={4000}
+            src="/images/hero_forest.jpg"
+            width={1920}
+            height={960}
             alt="森"
             className="object-cover w-full rounded-3xl h-[60vh]"
           />
         </SwiperSlide>
         <SwiperSlide className={styles.hero__slide}>
           <Image
-            src="/images/park.jpg"
-            width={6144}
-            height={4096}
+            src="/images/hero_park.jpg"
+            width={1920}
+            height={960}
             alt="公園"
             className="object-cover w-full rounded-3xl h-[60vh]"
           />
         </SwiperSlide>
         <SwiperSlide className={styles.hero__slide}>
           <Image
-            src="/images/river.jpg"
-            width={5760}
-            height={3840}
+            src="/images/hero_river.jpg"
+            width={1920}
+            height={960}
             alt="川"
             className="object-cover w-full rounded-3xl h-[60vh]"
           />
