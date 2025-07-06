@@ -94,7 +94,7 @@ const AnimationSection = () => {
           <div className="flex flex-wrap items-center flex-col md:flex-row md:justify-between">
             <div className="w-full md:w-[48%]">
               <h2 className="animation-title font-bold text-xl md:text-2xl lg:text-3xl mb-6 md:mb-7 lg:mb-8">
-                タイトル01
+                タイトル
               </h2>
               <div className="animation-text">
                 <p className="leading-loose">
@@ -126,7 +126,7 @@ const AnimationSection = () => {
           <div className="flex flex-wrap items-center flex-col md:flex-row md:justify-between">
             <div className="w-full md:w-[48%]">
               <h2 className="animation-title font-bold text-xl md:text-2xl lg:text-3xl mb-6 md:mb-7 lg:mb-8">
-                タイトル01
+                タイトル
               </h2>
               <div className="animation-text">
                 <p className="leading-loose">テキストテキストテキスト</p>
@@ -154,7 +154,7 @@ const AnimationSection = () => {
           <div className="flex flex-wrap items-center flex-col md:flex-row md:justify-between">
             <div className="w-full md:w-[48%]">
               <h2 className="animation-title font-bold text-xl md:text-2xl lg:text-3xl mb-6 md:mb-7 lg:mb-8">
-                タイトル01
+                タイトル
               </h2>
               <div className="animation-text">
                 <p className="leading-loose">テキストテキストテキスト</p>
