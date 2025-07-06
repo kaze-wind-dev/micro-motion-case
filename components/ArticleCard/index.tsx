@@ -39,7 +39,7 @@ const ArticleCard = ({ article }: Props) => {
                 />
               ) : (
                 <Image
-                  src="./images/no-image.jpg"
+                  src="./images/no-img.jpg"
                   width={600}
                   height={400}
                   alt="noimage"
