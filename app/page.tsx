@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import { getArticleList } from "@/libs/microcmsFunctions";
 import NewsCardList from "@/components/NewsCardList";
 import Hero from "@/components/Hero";
@@ -28,6 +28,7 @@ export default function Home() {
             最新情報をお届けします。
           </p>
           <NewsCardList news={news.contents} />
+          <Link href="/news/" className="bg-green-600 hover:bg-green-700 transition text-white text-center py-4 px-6 mx-auto mt-10 block w-fit">一覧を見る</Link>
         </div>
       </section>
     </main>
