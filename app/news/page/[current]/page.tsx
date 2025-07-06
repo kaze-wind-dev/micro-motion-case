@@ -5,10 +5,9 @@ import { notFound } from "next/navigation";
 import { NEW_LIMIT } from "@/constants";
 
 type Props = {
-  params: {
-    current: string;
-  };
+  params: Promise<{ current: string }>;
 };
+
 
 export default async function Page({ params }: Props) {
   const { current } = await params;
