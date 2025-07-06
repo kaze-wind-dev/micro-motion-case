@@ -27,8 +27,8 @@ export type MicroCMSQueries = {
 
 // コンテンツ取得時のレスポンスボディの型定義
 // @see https://document.microcms.io/content-api/get-list-contents#h8a4c320d89
-export type MicroCMSResponseBody = {
-  contents: MicroCMSContent[];
+export type MicroCMSResponseBody<T> = {
+  contents: (T & MicroCMSContent)[];
   totalCount: number;
   offset: number;
   limit: number;
@@ -72,9 +72,10 @@ export type News = {
 
 
 export type NewsList = {
-  contents: News[];
   totalCount: number;
   limit: number;
   offset: number;
-} & MicroCMSContentId &
-  MicroCMSDate;
+} &
+ MicroCMSContentId &
+  MicroCMSDate &
+  MicroCMSResponseBody<News>;

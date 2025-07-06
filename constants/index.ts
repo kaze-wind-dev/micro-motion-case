@@ -1,2 +1,2 @@
 
-export const NEW_LIMIT = 10;
+export const NEW_LIMIT = 2;
