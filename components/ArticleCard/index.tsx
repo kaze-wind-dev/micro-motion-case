@@ -19,7 +19,7 @@ const ArticleCard = ({ article }: Props) => {
     <article key={article.id} ref={ref}>
       <a
         href={`/news/${article.id}`}
-        className="py-6 lg:py-8 px-5 bg-white rounded-xl shadow-lg mb-4 hover:bg-green-50 hover:shadow-sm transition-all duration-300 block"
+        className="py-6 lg:py-8 px-5 bg-white rounded-xl shadow-lg hover:bg-green-50 hover:shadow-sm transition-all duration-300 block h-full"
       >
         <header className="mb-2 md:mb-3 lg:mb-4">
           <p className="text-xs text-right text-gray-500 mb-2 lg:mb-3">
