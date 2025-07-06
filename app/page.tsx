@@ -1,5 +1,4 @@
 
-// import Image from "next/image";
 import { getArticleList } from "@/libs/microcmsFunctions";
 import NewsCardList from "@/components/NewsCardList";
 import Hero from "@/components/Hero";
