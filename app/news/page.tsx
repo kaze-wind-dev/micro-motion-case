@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getArticleList } from "@/libs/microcmsFunctions";
 import NewsCardList from "@/components/NewsCardList";
 import { NEW_LIMIT } from "@/constants";
@@ -31,12 +32,12 @@ export default async function Page() {
                     {page + 1}
                   </span>
                 ) : (
-                  <a
+                  <Link
                     href={`/news/page/${page + 1}`}
                     className="bg-gray-200 text-gray-800 transition hover:bg-green-600 hover:text-white w-8 h-8 block leading-8 text-center"
                   >
                     {page + 1}
-                  </a>
+                  </Link>
                 )}
               </li>
             );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getArticleList } from "@/libs/microcmsFunctions";
 import NewsCardList from "@/components/NewsCardList";
 import { notFound } from "next/navigation";
@@ -44,7 +45,7 @@ export default async function Page({ params }: Props) {
                 {currentInt == page + 1 ? (
                   <span className="bg-green-600 text-white w-8 h-8 block leading-8 text-center">{page + 1}</span>
                 ) : (
-                  <a href={`/news/page/${page + 1}`} className="bg-gray-200 text-gray-800 transition hover:bg-green-600 hover:text-white w-8 h-8 block leading-8 text-center">{page + 1}</a>
+                  <Link href={`/news/page/${page + 1}`} className="bg-gray-200 text-gray-800 transition hover:bg-green-600 hover:text-white w-8 h-8 block leading-8 text-center">{page + 1}</Link>
                 )}
               </li>
               );
