@@ -1,10 +1,11 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import type { News } from "@/types";
 import { useInview } from "@/hook/useInview";
 import { useRef, useState } from "react";
 import Spinner from "../Spinner";
+
 import { dateFormat } from "@/libs/utility";
 type Props = {
   article: News;
@@ -17,7 +18,7 @@ const ArticleCard = ({ article }: Props) => {
 
   return (
     <article key={article.id} ref={ref}>
-      <a
+      <Link
         href={`/news/${article.id}`}
         className="py-6 lg:py-8 px-5 bg-white rounded-xl shadow-lg hover:bg-green-50 hover:shadow-sm transition-all duration-300 block h-full"
       >
@@ -53,7 +54,7 @@ const ArticleCard = ({ article }: Props) => {
         </header>
         <h3 className="text-md font-bold mb-2 line-clamp-1">{article.title}</h3>
         <p className="text-sm line-clamp-2">{article.description}</p>
-      </a>
+      </Link>
     </article>
   );
 };

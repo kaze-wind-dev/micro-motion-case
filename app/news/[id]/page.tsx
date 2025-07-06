@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getArticleList } from "@/libs/microcmsFunctions";
 import { notFound } from "next/navigation";
 import { dateFormat } from "@/libs/utility";
@@ -19,7 +20,6 @@ export default async function Page({ params }: Props) {
   } catch {
     notFound();
   }
-  console.log(data);
   return (
     <>
       <article className="py-16 md:py-24 lg:py-32">
@@ -33,7 +33,7 @@ export default async function Page({ params }: Props) {
             </p>
             <div dangerouslySetInnerHTML={{ __html: data.content }} />
           </div>
-          <a href="/news/" className="bg-green-600 hover:bg-green-700 transition text-white text-center py-4 px-6 mx-auto mt-10 block w-fit">一覧に戻る</a>
+          <Link href="/news/" className="bg-green-600 hover:bg-green-700 transition text-white text-center py-4 px-6 mx-auto mt-10 block w-fit">一覧に戻る</Link>
         </div>
       </article>
     </>
