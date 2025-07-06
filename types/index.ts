@@ -15,13 +15,13 @@ export type MicroCMSGetOptions = {
 export type MicroCMSQueries = {
   draftKey?: string;
   limit?: number;
-  offset?:number;
+  offset?: number;
   orders?: string;
   q?: string;
   fields?: string | string[];
   ids?: string;
   filters?: string | string[];
-  depth?:  number;
+  depth?: number;
   richEditorFormat?: "html" | "object";
 };
 
@@ -64,8 +64,17 @@ export type MicroCMSImage = {
 
 // お知らせコンテンツの型定義
 export type News = {
-  title: string,
-  description: string,
-  content: string,
-  thumbnail?: MicroCMSImage,
+  title: string;
+  description: string;
+  content: string;
+  thumbnail?: MicroCMSImage;
 } & MicroCMSContent;
+
+
+export type NewsList = {
+  contents: News[];
+  totalCount: number;
+  limit: number;
+  offset: number;
+} & MicroCMSContentId &
+  MicroCMSDate;
